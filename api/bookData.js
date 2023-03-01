@@ -37,7 +37,7 @@ const deleteBook = (firebaseKey) => new Promise((resolve, reject) => {
 
 // TODO: GET SINGLE BOOK
 const getSingleBook = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/books/${firebaseKey}.json`, {
+  fetch(`${endpoint}/Books/${firebaseKey}.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const createBook = (payload) => new Promise((resolve, reject) => {
 
 // TODO: UPDATE BOOK
 const updateBook = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/books/${payload.firebaseKey}.json`, {
+  fetch(`${endpoint}/Books/${payload.firebaseKey}.json`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
